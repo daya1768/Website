@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golden Horizon Hotel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="top-nav">
+        <div class="brand">Golden Horizon Hotel</div>
+        <a class="book-btn" href="#booking">Book Now</a>
+      </nav>
+
+      <div class="hero-content">
+        <p class="eyebrow">Welcome to comfort and elegance</p>
+        <h1>Your Relaxing Getaway in the Heart of the City</h1>
+        <p>
+          Experience spacious rooms, exceptional service, and breathtaking views
+          at Golden Horizon Hotel.
+        </p>
+        <a class="cta-btn" href="#rooms">Explore Rooms</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="rooms">
+        <h2>Featured Rooms</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Deluxe Room</h3>
+            <p>Perfect for couples, with king-sized bed and city view.</p>
+            <span class="price">From $149/night</span>
+          </article>
+          <article class="card">
+            <h3>Family Suite</h3>
+            <p>Two-bedroom suite designed for comfort and convenience.</p>
+            <span class="price">From $229/night</span>
+          </article>
+          <article class="card">
+            <h3>Executive Suite</h3>
+            <p>Premium amenities, lounge access, and panoramic skyline views.</p>
+            <span class="price">From $319/night</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section amenities">
+        <h2>Hotel Amenities</h2>
+        <ul>
+          <li>Rooftop infinity pool</li>
+          <li>Complimentary breakfast buffet</li>
+          <li>24/7 concierge and room service</li>
+          <li>Fitness center and wellness spa</li>
+          <li>High-speed Wi-Fi throughout the property</li>
+        </ul>
+      </section>
+
+      <section class="section booking" id="booking">
+        <h2>Plan Your Stay</h2>
+        <form>
+          <label>
+            Check-in
+            <input type="date" name="checkin" />
+          </label>
+          <label>
+            Check-out
+            <input type="date" name="checkout" />
+          </label>
+          <label>
+            Guests
+            <input type="number" name="guests" min="1" value="2" />
+          </label>
+          <button type="submit">Check Availability</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Golden Horizon Hotel • All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
